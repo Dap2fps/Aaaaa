@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sítio Mesa de Vó</title>
+    <style>
+        /* Estilo Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f3f9ef; /* Verde claro para fundo */
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #4b8f29; /* Verde escuro remetendo à natureza */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
+        header .logo-container img {
+            max-width: 120px; /* Ajusta o tamanho da logo */
+            border-radius: 50%; /* Deixa a logo circular */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #f9f9f9; /* Branco suave */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #d9f2d0; /* Verde claro */
+        }
+
+        /* Navegação */
+        nav {
+            background: #3e7323; /* Verde mais escuro para contraste */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            background-color: #4b8f29;
+        }
+
+        nav a:hover {
+            background-color: #4b8f29;
+        }
+
+        /* Abas */
+        .tab {
+            display: none;
+            padding: 2rem;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        /* Botões */
+        button {
+            background-color: #4b8f29; /* Verde escuro */
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e7323; /* Verde mais escuro */
+        }
+
+        /* Rodapé */
+        footer {
+            background: #3e7323;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <script>
+        // Seleciona os links de abas e as seções
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabLinks = document.querySelectorAll('nav a');
+            const tabs = document.querySelectorAll
